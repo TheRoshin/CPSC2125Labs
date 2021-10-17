@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CPSC 2125 Lab 5</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <div class="grid">
+      <header class="box header">
+        <h1>Lab 5</h1>
+      </header>
+      <nav class="box nav">
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="Lab1.html" title="Lab 1">Lab 1</a></li>
+          <li><a href="Lab2.html" title="Lab 2">Lab 2</a></li>
+          <li><a href="Lab3.html" title="Lab 3">Lab 3</a></li>
+          <li><a href="Lab4.html" title="Lab 4">Lab 4</a></li>
+          <li><a href="Lab5.html" title="Lab 5">Lab 5</a></li>
+        </ul>
+      </nav>
+      <main class="box main">
+        <p>Please fill out the following form.</P>
+        <p>* Required</p>
+        <form action="https://webdevbasics.net/scripts/yoga.php" method="POST">
+          <div>
+            <label for="firstname">First Name:*</label><br>
+            <input type="text" id="firstname" name="firstname" required><br>
+            <label for="lastname">Last Name:*</label><br>
+            <input type="text" id="lastname" name="lastname" required><br><br>
+          </div>
+          <div>
+            <label for="email">Enter your email:*</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+          </div>
+          <div>
+            <label for="state">Choose a state:*</label>
+            <select name="state" id="state" name="state" required>
+              <option value="">SELECT</option>
+              <option value="Al">AL</option>
+              <option value="FL">FL</option>
+              <option value="GA">GA</option>
+            </select>
+            <br><br>
+          </div>
+          <div>
+            <label for="marital_state">Choose a marital state:</label><br>
+            <input type="radio" id"single" name="marital_state" value="Single">
+            <label for="single">Single</label><br>
+            <input type="radio" id"married" name="marital_state" value="Married">
+            <label for="married">Married</label><br>
+            <input type="radio" id"divorced" name="marital_state" value="Divorced">
+            <label for="divorced">Divorced</label><br><br>
+          </div>
+          <div>
+            <label for="skills">Choose a skills:</label><br>
+            <input type="checkbox" id="python" name="skills" value="pyhton">
+            <label for="python">Pyhton</label><br>
+            <input type="checkbox" id="java" name="skills" value="java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" id="HTML" name="skills" value="HTML">
+            <label for="HTML">HTML</label><br><br>
+          </dir>
+          <div>
+            <p>Comments:</p>
+            <textarea id="comments" name="comments" rows="5" cols="50">
+            </textarea><br><br>
+          </div>
+          <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </div>
+        </form>
+        
+      </main>
+      <footer class="box footer">
+        <p>Roshin Roychan | <span id="time"></span></p>
+      </footer>
+    </div>
+      
+    <script src="script.js"></script>
+  </body>
+</html>
