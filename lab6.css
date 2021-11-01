@@ -1,0 +1,101 @@
+body{
+  background-color: black;
+}
+/*Defing the gird and styling the gird area
+*/
+.header{
+  grid-area: header;
+  background-color: red;
+}
+.nav{
+  grid-area: nav;
+  background-color: yellow;
+  text-align: center;
+}
+.section{
+  grid-area: section;
+  background-color: gray;
+  text-align: center;
+}
+.article{
+  grid-area: article;
+  background-color: white;
+
+}
+.aside{
+  grid-area: aside;
+  background-color: green;
+}
+.footer{
+  grid-area: footer;
+  text-align: center;
+  background-color: rgb(229, 229, 229);
+}
+.grid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas: 
+  "header header header" 
+  "nav nav nav"
+  "section section aside"
+  "article article aside"
+  "footer footer footer";
+  background-color: rgb(0,0,0);
+  /*color: #444;*/
+}
+.grid > div{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+.box {
+  /*background-color: rgb(229, 229, 229);*/
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.5em;
+}
+
+/*defing the what display look like
+*/
+header, nav, section, article, aside, footer{
+  display: absolute;
+}
+
+/*styling for the nav section*/
+nav ul{
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin-right: 30px;
+  transition: all .10s ease;
+  color: #fff;
+  border: 3px solid white;
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color : transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+}
+
+nav li a:link{
+  text-decoration: none;
+}
+
+nav li:hover{
+  color: #001F3F;
+  background-color: #fff;
+}
+
+/*other styling*/
+p{
+  font-family: cursive;
+  font-size: 20px;
+}
+h{
+  font-size: 50px;
+}
